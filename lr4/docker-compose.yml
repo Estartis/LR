@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  lr4-db:
+    image: postgres
+    container_name: lr4-db
+    restart: always
+    ports:
+      - '3145:5432'
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: lr4-db

@@ -1,0 +1,271 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Marck+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Marck+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+.paleBlue {
+  background: #ccd1db;
+  color: #858fb4;
+  font-family: "Caveat", cursive;
+}
+
+.blush {
+  background: #ebbac2;
+  color: #eb7096;
+  font-family: "Comfortaa", cursive;
+
+
+}
+
+.beige {
+  background: #f5f2f0;
+  color: #edb240;
+  font-family: 'Oswald';
+
+
+}
+
+.toastedCaramel {
+  background: #84592b;
+  color: #e8d1a7
+}
+
+.oliveHarvest {
+  background: #9d9167;
+  color: #e8d1a7;
+  font-family: 'Playfair Display';
+
+}
+
+.spisedWine {
+  background: #743014;
+  color: #e8d1a7;
+  font-family: 'Oswald';
+
+}
+
+.spruce {
+  background: #25330f;
+  font-family: 'Oswald';
+  color: #e8d1a7;
+}
+
+.midnight {
+  background: #042d29;
+  color: #e8d1a7;
+  font-family: "Playfair Display";
+}
+
+.lavender {
+  background: #8474b7;
+  font-family: "Comfortaa", cursive;
+
+
+  color: #25336e
+}
+
+.Frame-main {
+  height: 90vh;
+  box-shadow: 0px 0px 5px 3px rgb(4, 4, 4, 0.2);
+  width: clamp(800px, 90%, 1900px);
+  border-radius: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 40px;
+  display: flex;
+
+}
+
+.Frame-list {
+  display: flex;
+  flex-direction: column;
+  width: clamp(200px, 85%, 450px);
+  overflow-y: scroll;
+
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* transition: all 1.9s ease-in; */
+  height: 100px;
+
+
+}
+
+.noteList {
+  padding: 10px;
+  height: max-content;
+  transition: height 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.noteItem {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  background: rgba(0, 0, 0, 0.05);
+  width: 80%;
+  min-width: 280px;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 40px;
+  display: flex;
+  display: inline-block;
+  justify-content: space-between;
+  flex-direction: column;
+
+
+}
+
+.noteItem.removing {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.text-div {
+  width: 200px;
+  font-size: clamp(0.7em, 1.8vw, 1.2em);
+  overflow: hidden;
+
+
+}
+
+.date-div {
+  width: clamp(100px, 70%, 250px);
+  margin-left: 5px;
+  font-size: clamp(0.9em, 2vw, 1.2em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.options-div {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+}
+
+.add-notes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.add-notes:hover {
+  font-size: 35px;
+}
+
+.dataEntry {
+  height: 40px;
+  width: clamp(200px, 80%, 500px);
+  margin: 10px;
+  border-radius: 10px;
+  border-color: rgb(128, 128, 128);
+  padding: 5px;
+  font-size: 17px;
+
+
+}
+
+.dataButton {
+  height: 40px;
+  width: clamp(200px, 80%, 500px);
+
+  margin: 10px;
+  border-radius: 10px;
+  border-color: aliceblue;
+  background-color: white;
+  color: white;
+  padding: 5px;
+  font-size: 19px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(20deg, rgb(192, 192, 192), rgb(92, 92, 92));
+
+}
+
+.interactives {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 30px;
+}
+
+.interactives.hover {
+  background-color: black;
+  font-size: 40px;
+
+}
+
+.noteNameItem {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  width: clamp(200px, 85%, 450px);
+
+
+}
+
+.noteNameItem-active {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 0px 2px 2px rgb(4, 4, 4, 0.2);
+
+  border-radius: 20px;
+  margin: 10px;
+  width: clamp(200px, 85%, 450px);
+
+
+}
+
+.title-note {
+  /* color: white; */
+  font-size: 33px;
+  border-width: 0px;
+  background-color: rgba(222, 184, 135, 0);
+  outline: none;
+  resize: none;
+
+
+}
+
+.desc-note {
+  margin-top: 30px;
+  /* color: white; */
+  font-size: 25px;
+  border-width: 0px;
+  background-color: rgba(222, 184, 135, 0);
+  height: 75vh;
+  outline: none;
+  resize: none;
+
+
+}
